@@ -1,3 +1,3 @@
 # collisiontest.github.com
 
-# this is bad
+# this is good
