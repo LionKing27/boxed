@@ -1,3 +1,3 @@
-# boxed
+# B O X E D
 
-boxed is going to be my first game using javascript. The goal of this project is to allow me to figure out how to program in Javascript head on.
+Boxed is a physics simulation using javascript.
