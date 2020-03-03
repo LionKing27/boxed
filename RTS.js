@@ -23,55 +23,37 @@ floorImage.src = 'floooooR.png';
 wallImage.onload = function() {
   wallReady = true;
 };
-wallImage.src = 'WALLL.png';
+wallImage.src = 'WaLLL.png';
 walImage.onload = function() {
   walReady = true;
 };
 walImage.src = 'WALLLLL.png';
 /* prettier disable */
 const gameMap = [
-    1, 2, 2, 1, 2, 2, 1, 2, 2, 1, 2, 2, 1, 2, 2, 1, 1,
-    1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1,
-    1, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 1, 1,
-    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1,
-    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1,
-    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1,
-    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1,
-    1, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1, 1,
-    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1,
-    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1,
-    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1,
-    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1,
-    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1,
-    1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1,
-    1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1,
-    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+    1, 1, 1, 1, 2, 2, 1, 2, 2, 1, 2, 2, 1, 2, 2, 2, 2, 1,
+    1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1,
+    1, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+    1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+    1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1,
+    1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1,
+    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
 ];
-const collisionMap = [
-  1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-  1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1,
-  1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1,
-  1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1,
-  1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1,
-  1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1,
-  1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1,
-  1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1,
-  1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1,
-  1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1,
-  1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1,
-  1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1,
-  1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1,
-  1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1,
-  1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-  1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
-];
-/* prettier enable */
 
 Map = {
   tW: 50,
   tH: 50,
-  mW: 17,
-  mH: 16
+  mW: 18,
+  mH: 17
 };
 
 scroll = {
@@ -168,16 +150,39 @@ loop = function() {
     }
   }
 
-  player.x += player.xv;
-  if (collisionMap[(Map.mW * (Math.floor(player.y / 50)) + Math.floor(player.x / 50))] ===  1) {
-    player.x -= player.xv
-    player.xv = 0
+  if (player.xv < 0) {
+    if (gameMap[(Map.mW * (Math.floor((player.y) / 50)) + Math.floor((player.x) / 50))] !==  0 || gameMap[(Map.mW * (Math.floor((player.y) / 50) + 1) + Math.floor((player.x) / 50))] !==  0) {
+      player.x -= player.xv
+      player.xv = 0
+    };
+  }else {
+    player.x += player.xv;
   };
-  player.y += player.yv;
-  if (collisionMap[(Map.mW * (Math.floor(player.y / 50)) + Math.floor(player.x / 50))] ===  1) {
-    player.y -= player.yv
-    player.yv = 0
+  if (player.xv > 0) {
+    if (gameMap[(Map.mW * (Math.floor((player.y) / 50)) + Math.floor((player.x) / 50) + 1)] !==  0 || gameMap[(Map.mW * (Math.floor((player.y) / 50) + 1) + Math.floor((player.x) / 50) + 1)] !==  0) {
+      player.x -= player.xv
+      player.xv = 0
+    };
+  }else {
+    player.x += player.xv;
   };
+  if (player.yv < 0) {
+    if (gameMap[(Map.mW * (Math.floor((player.y) / 50)) + Math.floor((player.x) / 50))] !==  0 || gameMap[(Map.mW * (Math.floor((player.y) / 50)) + Math.floor((player.x) / 50) + 1)] !==  0) {
+      player.y -= player.yv
+      player.yv = 0
+    };
+  }else {
+    player.y += player.yv;
+  };
+  if (player.yv > 0) {
+    if (gameMap[(Map.mW * (Math.floor((player.y) / 50) + 1) + Math.floor((player.x) / 50))] !==  0 || gameMap[(Map.mW * (Math.floor((player.y) / 50) + 1) + Math.floor((player.x) / 50) + 1)] !==  0) {
+      player.y -= player.yv
+      player.yv = 0
+    };
+  }else {
+    player.y += player.yv;
+  };
+
   if (controller.left || controller.right) {
   } else {
     // i do not understand why you made these physics the way you did. like why
@@ -190,6 +195,19 @@ loop = function() {
 //scrolling
 scroll.X = player.x - ((Map.mW * 50)/2);
 scroll.Y = player.y - ((Map.mH * 50)/2);
+if (scroll.X > 100) {
+  scroll.X = 100
+};
+if (scroll.X < 0) {
+  scroll.X = 0
+};
+if (scroll.Y > 50) {
+  scroll.Y = 50
+};
+if (scroll.Y < 0) {
+  scroll.Y = 0
+};
+console.log (scroll.X);
 ctx.fillRect(0,0,800,800);  
 drawGame();
   if (boxReady) {
@@ -201,3 +219,4 @@ drawGame();
 window.addEventListener('keydown', controller.keyListener);
 window.addEventListener('keyup', controller.keyListener);
 window.requestAnimationFrame(loop);
+
