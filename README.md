@@ -1,9 +1,5 @@
 # B O X E D
 
----
-title: Home
-url: /
----
 # boxed
 
 Try it out **[here](RTS.html)**
