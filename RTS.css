@@ -28,6 +28,8 @@
   
   canvas {
   
+    max-width: 100vmin;
+    max-height: 100vmin;
     background-color:#000000;
     justify-self:center;
   
